@@ -1,21 +1,4 @@
-import { useState } from 'react';
-import {
-  ArrowDown,
-  FileText,
-  Github,
-  Linkedin,
-  Sparkles,
-  Bot,
-  Workflow,
-  CheckCircle2,
-  Terminal,
-  Play,
-  RotateCcw,
-  ShieldCheck,
-  Award,
-  Phone,
-  Mail,
-  MapPin,
+import myPicture from './profile.jpg';src/assets/ChatGPT Image Sep 15, 2026, 11_48_08 AM.png 
 } from 'lucide-react';
 import { PERSONAL_INFO, INTERNSHIP_LETTER } from '../data/portfolioData';
 
