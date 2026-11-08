@@ -1,0 +1,322 @@
+import { PortfolioData } from '@/types/portfolio';
+
+export const sampleDeveloperPortfolio: PortfolioData = {
+  username: 'annierajpoot',
+  personal: {
+    fullName: 'Annie Rajpoot',
+    profession: 'Full Stack & AI Systems Engineer',
+    headline: 'Building scalable distributed systems and generative AI experiences.',
+    bio: 'Software engineer specializing in high-throughput backend services, Next.js applications, and LLM orchestration. Passionate about developer tooling, clean architectures, and modern web engineering.',
+    location: 'Open to Remote & Global Relocation',
+    avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
+    openToWork: true,
+    availableForHire: true,
+  },
+  contact: {
+    email: 'annie.rajpoot@example.com',
+    github: 'https://github.com/annierajpoot',
+    linkedin: 'https://linkedin.com/in/annierajpoot',
+    twitter: 'https://x.com/annierajpoot',
+    website: 'https://annierajpoot.dev',
+  },
+  skills: [
+    {
+      category: 'Languages & Core',
+      items: ['TypeScript', 'Python', 'Go', 'SQL', 'JavaScript (ESNext)'],
+    },
+    {
+      category: 'Frameworks & Web',
+      items: ['React 19', 'Next.js', 'FastAPI', 'Node.js', 'Tailwind CSS', 'GraphQL'],
+    },
+    {
+      category: 'AI & Data Infrastructure',
+      items: ['Gemini API', 'LangChain', 'PostgreSQL', 'Redis', 'Vector Search', 'Kafka'],
+    },
+    {
+      category: 'Cloud & DevOps',
+      items: ['Docker', 'Kubernetes', 'AWS', 'Vercel', 'CI/CD GitHub Actions'],
+    },
+  ],
+  projects: [
+    {
+      id: 'proj-1',
+      title: 'NeuralSearch Engine',
+      tagline: 'Sub-millisecond hybrid vector retrieval system',
+      description: 'Architected an open-source hybrid semantic and keyword search engine capable of indexing 10M+ documents with sub-15ms p99 latency.',
+      metrics: 'Indexed 10M+ documents with 3.8x faster retrieval than standard Elasticsearch.',
+      technologies: ['Go', 'Rust', 'Qdrant', 'gRPC', 'Docker'],
+      liveUrl: 'https://example.com/neuralsearch',
+      githubUrl: 'https://github.com/annierajpoot/neuralsearch',
+      featured: true,
+    },
+    {
+      id: 'proj-2',
+      title: 'Agentic Workflow Orchestrator',
+      tagline: 'Multi-agent autonomous task execution platform',
+      description: 'Engineered a resilient distributed workflow engine for long-running AI agents with replayability, human-in-the-loop approvals, and telemetry.',
+      metrics: 'Automated 12,000+ developer tasks monthly across 40 beta organizations.',
+      technologies: ['TypeScript', 'Next.js', 'PostgreSQL', 'BullMQ', 'Gemini Pro'],
+      liveUrl: 'https://example.com/agent-flow',
+      githubUrl: 'https://github.com/annierajpoot/agent-flow',
+      featured: true,
+    },
+    {
+      id: 'proj-3',
+      title: 'HyperLog Analytics',
+      tagline: 'Real-time telemetry and edge metrics streaming',
+      description: 'High-speed event ingestion pipeline processing analytics for modern SaaS applications with zero-lag dashboard updates.',
+      metrics: 'Handled 80M daily events with 99.99% uptime on serverless infrastructure.',
+      technologies: ['Python', 'FastAPI', 'ClickHouse', 'React', 'Apache Kafka'],
+      liveUrl: 'https://example.com/hyperlog',
+      githubUrl: 'https://github.com/annierajpoot/hyperlog',
+      featured: false,
+    },
+  ],
+  experiences: [
+    {
+      id: 'exp-1',
+      role: 'Senior Software Engineer',
+      company: 'ScaleAI Systems',
+      location: 'San Francisco, CA (Remote)',
+      period: '2023 - Present',
+      highlights: [
+        'Spearheaded LLM fine-tuning pipelines and inference cache, cutting API costs by 41%.',
+        'Led architecture of microservices handling 250M monthly requests with 99.98% availability.',
+        'Mentored 6 junior/mid-level engineers and established TypeScript best practices.',
+      ],
+    },
+    {
+      id: 'exp-2',
+      role: 'Full Stack Engineer',
+      company: 'CloudVector Labs',
+      location: 'Remote',
+      period: '2021 - 2023',
+      highlights: [
+        'Built full-stack React/Next.js developer dashboard serving 60k active developers.',
+        'Decreased bundle sizes by 32% and achieved perfect 100 Lighthouse performance scores.',
+        'Implemented OAuth2, RBAC, and multi-tenant organization billing via Stripe.',
+      ],
+    },
+  ],
+  education: [
+    {
+      id: 'edu-1',
+      degree: 'B.S. in Computer Science & Software Engineering',
+      institution: 'University of Engineering and Technology',
+      year: '2017 - 2021',
+    },
+  ],
+  theme: {
+    templateId: 'developer-dark',
+    primaryColor: '#3b82f6',
+    fontFamily: 'mono',
+    darkMode: true,
+  },
+  seo: {
+    metaTitle: 'Annie Rajpoot | Full Stack & AI Systems Engineer',
+    metaDescription: 'Personal portfolio and engineering showcase of Annie Rajpoot, specializing in high-throughput distributed systems and generative AI.',
+    keywords: ['Annie Rajpoot', 'Software Engineer', 'Full Stack', 'AI Systems', 'Next.js', 'Go', 'TypeScript'],
+  },
+  scoring: {
+    overallScore: 96,
+    recruiterScore: 97,
+    contentScore: 94,
+    designScore: 96,
+    seoScore: 95,
+    feedback: [
+      'Strong quantifiable metrics included in project cards.',
+      'Clear breakdown of tech stack and system architectures.',
+      'Excellent recruiter-friendly links to GitHub and live demos.',
+    ],
+  },
+};
+
+export const sampleDesignerPortfolio: PortfolioData = {
+  username: 'elenarossi',
+  personal: {
+    fullName: 'Elena Rossi',
+    profession: 'Principal Product & Interaction Designer',
+    headline: 'Crafting thoughtful digital interfaces and fluid design systems.',
+    bio: 'Award-winning product designer focused on complex enterprise platforms and consumer apps. 7+ years turning tangled workflows into intuitive, human-centered experiences.',
+    location: 'New York, NY / Milan',
+    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80',
+    openToWork: false,
+    availableForHire: true,
+  },
+  contact: {
+    email: 'elena@rossidesign.co',
+    linkedin: 'https://linkedin.com',
+    twitter: 'https://x.com',
+    website: 'https://rossidesign.co',
+  },
+  skills: [
+    {
+      category: 'Design Disciplines',
+      items: ['Product Strategy', 'Design Systems', 'Interaction Design', 'User Research', 'Prototyping'],
+    },
+    {
+      category: 'Tooling',
+      items: ['Figma', 'Framer', 'Principle', 'Adobe Creative Cloud', 'Linear'],
+    },
+    {
+      category: 'Technical Handoff',
+      items: ['HTML/CSS', 'Design Tokens', 'Tailwind', 'Accessibility (WCAG AAA)'],
+    },
+  ],
+  projects: [
+    {
+      id: 'proj-des-1',
+      title: 'Aura Fintech Banking Suite',
+      tagline: 'Reimagining mobile wealth management for 2M+ users',
+      description: 'End-to-end design of a modular financial platform, integrating predictive budgeting, crypto portfolios, and conversational spending insights.',
+      metrics: 'Elevated App Store rating from 3.6 to 4.8; increased 90-day retention by 28%.',
+      technologies: ['Figma', 'Design Systems', 'iOS Guidelines', 'Micro-interactions'],
+      liveUrl: 'https://example.com/aura-case-study',
+      featured: true,
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80',
+    },
+    {
+      id: 'proj-des-2',
+      title: 'Lumina Collaborative Canvas',
+      tagline: 'Infinite workspace for asynchronous creative teams',
+      description: 'Designed a real-time multiplayer whiteboard application optimized for latency-critical brainstorming sessions and asset handoff.',
+      metrics: 'Decreased designer onboarding time by 50% across 180 enterprise accounts.',
+      technologies: ['Design Tokens', 'Web Interaction', 'Framer Prototype'],
+      liveUrl: 'https://example.com/lumina-case-study',
+      featured: true,
+      image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&auto=format&fit=crop&q=80',
+    },
+  ],
+  experiences: [
+    {
+      id: 'exp-des-1',
+      role: 'Staff Product Designer',
+      company: 'Starlight Labs',
+      location: 'New York, NY',
+      period: '2022 - Present',
+      highlights: [
+        'Created and governed global design system utilized by 45 cross-functional engineers.',
+        'Conducted over 60 qualitative user interviews to validate 0-to-1 core product offerings.',
+      ],
+    },
+  ],
+  education: [
+    {
+      id: 'edu-des-1',
+      degree: 'B.F.A. in Interaction Design',
+      institution: 'Rhode Island School of Design (RISD)',
+      year: '2014 - 2018',
+    },
+  ],
+  theme: {
+    templateId: 'designer-creative',
+    primaryColor: '#ec4899',
+    fontFamily: 'sans',
+    darkMode: false,
+  },
+  seo: {
+    metaTitle: 'Elena Rossi | Principal Product & Interaction Designer',
+    metaDescription: 'Portfolio of Elena Rossi - Product design, design systems, and interaction case studies.',
+    keywords: ['Product Designer', 'UI/UX', 'Design Systems', 'Figma', 'Framer'],
+  },
+};
+
+export const sampleFreelancerPortfolio: PortfolioData = {
+  username: 'marcusvance',
+  personal: {
+    fullName: 'Marcus Vance',
+    profession: 'Senior Growth & Conversion Web Specialist',
+    headline: 'I design and build high-converting web applications that turn visitors into revenue.',
+    bio: 'Independent consultant and developer helping venture-backed startups and modern brands launch websites that convert. Delivered 35+ successful client builds over 6 years.',
+    location: 'Austin, TX (Available Globally)',
+    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
+    openToWork: false,
+    availableForHire: true,
+  },
+  contact: {
+    email: 'marcus@vancegrowth.com',
+    github: 'https://github.com',
+    linkedin: 'https://linkedin.com',
+    website: 'https://vancegrowth.com',
+  },
+  skills: [
+    {
+      category: 'Services',
+      items: ['Conversion Rate Optimization', 'Custom Web Applications', 'Headless CMS', 'SEO Architecture'],
+    },
+    {
+      category: 'Tech Stack',
+      items: ['Next.js', 'React', 'Tailwind CSS', 'Shopify Plus', 'Stripe Integration'],
+    },
+  ],
+  services: [
+    {
+      id: 'srv-1',
+      title: 'Rapid MVP Launch Sprint',
+      description: 'Take your product from idea to live, revenue-collecting web app in under 3 weeks.',
+      priceStartingAt: '$4,500',
+      deliverables: ['Custom Next.js Frontend', 'Auth & Stripe Payments', 'Database Architecture', 'Automated CI/CD'],
+    },
+    {
+      id: 'srv-2',
+      title: 'High-Converting Marketing Site',
+      description: 'Bespoke marketing site crafted to skyrocket signups, demo requests, and investor interest.',
+      priceStartingAt: '$3,200',
+      deliverables: ['Responsive Web Design', 'Interactive Storytelling', 'Technical SEO & 95+ PageSpeed', 'CMS Setup'],
+    },
+  ],
+  projects: [
+    {
+      id: 'proj-free-1',
+      title: 'Zenith SaaS Marketing Platform',
+      tagline: 'Zero-to-One website redesign and lead generation engine',
+      description: 'Designed and deployed an interactive marketing website with integrated demo bookings and pricing calculator.',
+      metrics: 'Doubled conversion rate from 2.1% to 4.4% within 60 days of launch.',
+      technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'HubSpot API'],
+      liveUrl: 'https://example.com/zenith',
+      featured: true,
+    },
+  ],
+  testimonials: [
+    {
+      id: 'test-1',
+      author: 'Sarah Jenkins',
+      role: 'CEO & Co-founder',
+      company: 'Zenith Health',
+      quote: 'Marcus did not just build our site; he overhauled our conversion funnel. Our customer acquisition cost dropped 30% in month one.',
+      avatarUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
+    },
+  ],
+  experiences: [
+    {
+      id: 'exp-free-1',
+      role: 'Principal Consultant',
+      company: 'Vance Growth Studio',
+      location: 'Austin, TX',
+      period: '2019 - Present',
+      highlights: [
+        'Partnered with 35+ founders across Y Combinator and Techstars portfolios.',
+        'Generated over $8.5M in client pipeline revenue through optimized web properties.',
+      ],
+    },
+  ],
+  education: [
+    {
+      id: 'edu-free-1',
+      degree: 'B.S. in Business Administration & Marketing',
+      institution: 'University of Texas at Austin',
+      year: '2015 - 2019',
+    },
+  ],
+  theme: {
+    templateId: 'freelancer-services',
+    primaryColor: '#10b981',
+    fontFamily: 'sans',
+    darkMode: false,
+  },
+  seo: {
+    metaTitle: 'Marcus Vance | Growth & Conversion Web Specialist',
+    metaDescription: 'High-converting web design, development, and conversion optimization for venture-backed startups.',
+    keywords: ['Freelancer', 'Next.js Developer', 'CRO', 'Web Design', 'SaaS Marketing'],
+  },
+};
