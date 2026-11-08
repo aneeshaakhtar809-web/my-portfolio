@@ -81,14 +81,29 @@ export default function DeveloperTemplate({ portfolio }: TemplateProps) {
       <main className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-16 space-y-16 sm:space-y-24">
         {/* Hero Section */}
         <section id="about" className="pt-2 sm:pt-8 space-y-4 sm:space-y-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] sm:text-xs font-mono bg-[#161b22] border border-[#30363d] text-blue-400 max-w-full">
-            <Code2 className="w-3.5 h-3.5 shrink-0" />
-            <span className="truncate">{personal.profession}</span>
-          </div>
+          <div className="flex flex-col-reverse sm:flex-row sm:items-start justify-between gap-6">
+            <div className="space-y-4 sm:space-y-6 flex-1">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] sm:text-xs font-mono bg-[#161b22] border border-[#30363d] text-blue-400 max-w-full">
+                <Code2 className="w-3.5 h-3.5 shrink-0" />
+                <span className="truncate">{personal.profession}</span>
+              </div>
 
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight break-words">
-            Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-400">{personal.fullName}</span>
-          </h1>
+              <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight break-words">
+                Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-400">{personal.fullName}</span>
+              </h1>
+            </div>
+
+            {personal.avatarUrl && (
+              <div className="relative w-20 h-20 sm:w-28 sm:h-28 rounded-2xl overflow-hidden border-2 border-blue-500/40 shadow-xl shadow-blue-500/20 shrink-0 bg-[#161b22]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={personal.avatarUrl}
+                  alt={personal.fullName}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            )}
+          </div>
 
           <p className="text-base sm:text-xl md:text-2xl text-[#8b949e] font-light max-w-3xl leading-relaxed">
             {personal.headline}

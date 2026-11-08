@@ -8,7 +8,7 @@ export const sampleDeveloperPortfolio: PortfolioData = {
     headline: 'Building scalable distributed systems and generative AI experiences.',
     bio: 'Software engineer specializing in high-throughput backend services, Next.js applications, and LLM orchestration. Passionate about developer tooling, clean architectures, and modern web engineering.',
     location: 'Open to Remote & Global Relocation',
-    avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
+    avatarUrl: '/avatar.png',
     openToWork: true,
     availableForHire: true,
   },
